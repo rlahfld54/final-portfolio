@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>프론트엔드 개발자, 황주은</title>
+    <!-- jquery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- html5shiv -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- vender-prefix -->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <!-- scrollNice -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <!-- Progressbar 관련 -->
+    <script src="js/progressbar/progressbar.js"></script>
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <section class="Gotop">
+        <div class="go-top">
+            <span>TOP</span>
+        </div>
+    </section>
+
+    <button class="fix-menu">
+        <span></span>
+    </button>
+    <div class="fix-wrap">
+        <ul class="fix-gnb">
+            <li><a href="#profile" class="move">Profile</a></li>
+            <li><a href="#life" class="move">Why me</a></li>
+            <li><a href="#publishing" class="move">Publishing</a></li>
+            <li><a href="#frontend" class="move">LIFE</a></li>
+            <li><a href="#contact" class="move">Contact</a></li>
+        </ul>
+
+        <div class="colse-btn">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <header class="header">
+
+            <div class="container">
+                <!-- 로고는 자신을 브랜딩 하는 것입니다. -->
+                <!-- favicon.ico / mobile-touch-icon.png -->
+                <a href="#" class="logo"></a>
+
+                <ul class="gnb">
+                    <li><a href="#profile" class="move">Profile</a></li>
+                    <li><a href="#life" class="move">Why me</a></li>
+                    <li><a href="#publishing" class="move">Publishing</a></li>
+                    <li><a href="#frontend" class="move">LIFE</a></li>
+                    <li><a href="#contact" class="move">Contact</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <!-- 표지 : 보기 좋으면서 기억에 남도록 구성하세요. -->
+        <section class="visual" id="visual">
+
+            <iframe autoplay controls loop muted class="youtube" width="560" height="315"
+                src="https://www.youtube.com/embed/wCc3_OXmTaU?rel=0&amp;autoplay=1&mute=1&amp;loop=5;"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <img src="./images/001.jpg" alt="비주얼배경">
+        </section>
+
+        <section class="profile" id="profile">
+            <div class="container">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/002.jpg" alt="1" class="h1000"></div>
+                        <div class="swiper-slide"><img src="./images/003.jpg" alt="1" class="h1000"></div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-pagination swiper-pagination-progressbar"><span
+                            class="swiper-pagination-progressbar-fill"
+                            style="margin-top: 16px;padding-top: 10px;transform: translate3d(0px, 0px, 0px) scaleX(1) scaleY(1);transition-duration: 300ms;"></span>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <section class="life" id="life">
+            <div class="container">
+            </div>
+        </section>
+        
+        <section class="publ" id="publishing">
+            <div class="container">
+                <!-- swiper 로 구현하시기를 권장 합니다. -->
+                <div class="publ-wrap">
+                    <div class="swiper-container sw-publ">
+                        <div class="swiper-wrapper" style="margin-top: 206px;">
+                            <div class="swiper-slide">
+                                <div class="publ-box">
+                                    <h4>INHA UNIVERSITY</h4>
+                                    <p><img src="./images/인하대학교사진.jpg" alt=""></p>
+                                    <ul>
+                                        <li><a href="http://rlahfld54.dothome.co.kr/inha" target="_blank">Work</a></li>
+                                        <li><a href="https://github.com/rlahfld54" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="publ-box">
+                                    <h4>Nexus</h4>
+                                    <p><img src="./images/visual_1.jpg" alt=""></p>
+                                    <ul>
+                                        <li><a href="http://rlahfld54.dothome.co.kr/nexus" target="_blank">Work</a></li>
+                                        <li><a href="https://github.com/rlahfld54" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="publ-box">
+                                    <h4>SONY</h4>
+                                    <p><img src="./images/sony.jpg" alt=""></p>
+                                    <ul>
+                                        <li><a href="http://rlahfld54.dothome.co.kr/sony" target="_blank">Work</a></li>
+                                        <li><a href="https://github.com/rlahfld54" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="publ-box">
+                                    <h4>greenjuice</h4>
+                                    <p><img src="./images/풀무원녹즙.jpg" alt=""></p>
+                                    <ul>
+                                        <li><a href="http://rlahfld54.dothome.co.kr/greenjuice" target="_blank">Work</a></li>
+                                        <li><a href="https://github.com/rlahfld54" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="publ-box">
+                                    <h4>SIDIZ</h4>
+                                    <p><img src="./images/sidiz.jpg" alt=""></p>
+                                    <ul>
+                                        <li><a href="http://rlahfld54.dothome.co.kr/sidiz" target="_blank">Work</a></li>
+                                        <li><a href="https://github.com/rlahfld54" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="publ-box">
+                                    <h4>STXCONST</h4>
+                                    <p><img src="./images/stx건설.PNG" alt=""></p>
+                                    <ul>
+                                        <li><a href="http://rlahfld54.dothome.co.kr/stxconst" target="_blank">Work</a></li>
+                                        <li><a href="https://github.com/rlahfld54" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="front" id="frontend">
+            <div class="container">
+            </div>
+        </section>
+
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <!-- 생일, 전화번호, 카카오 등 공개 금지 이메일 -->
+                <!-- 본인의 비전... 등... 격언, 이메일 .... -->
+                <!-- <h2>Contact</h2> -->
+                <div class="contact-wrap">
+                    <ul>
+                        <li><a href="https://blog.naver.com/rlahfld54/222545869130">블로그</a></li>
+                        <li><a href="#">이메일</a></li>
+                        <li><a href="./asset/핀테크에 관심이 많은 프론트엔드 개발자_rlahfld54.pdf" target="_blank" download>PDF 다운로드</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
